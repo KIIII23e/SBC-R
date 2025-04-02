@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBC - Steel Battleground Crew</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: rgba(18, 18, 18, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00aaff;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1500x800') no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-text {
+            position: relative;
+            color: white;
+            z-index: 10;
+            animation: fadeInDown 1.5s;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 100px 30px;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .subsection {
+            margin-bottom: 60px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(26, 26, 26, 0.8);
+            border: 1px solid #00aaff;
+        }
+
+        .subsection h3 {
+            margin-bottom: 10px;
+            color: #00aaff;
+        }
+
+        .subsection p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00aaff;
+            background-color: rgba(18, 18, 18, 0.8);
+            color: white;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">SBC</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#structure">Structure</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Steel Battleground Crew</h1>
+            <p>Unleashing Tactical Mastery & Unyielding Brotherhood in Every Battle. Step into the Arena of Steel and Strategy.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="subsection">
+            <h3>Our Origins</h3>
+            <p>The Steel Battleground Crew (SBC) was formed as a coalition of highly skilled players determined to master the tactical complexity of Roblox combat environments. With origins dating back several years, the SBC began as a small group of friends dedicated to improving their skills through rigorous training, analytical breakdowns of battle reports, and strategic simulations. What started as a modest initiative soon transformed into a fully-fledged faction, gaining notoriety for its discipline and coordination.</p>
+            <p>The roots of the SBC lie deep within the competitive realms of Roblox, where fierce confrontations and epic battles shaped the foundation of what would become a legacy of excellence. The founders envisioned a team where each individual’s potential could be harnessed through structured training, mentorship, and leadership. Today, the SBC stands as a shining example of unity and strength in the Roblox community.</p>
+        </div>
+        <div class="subsection">
+            <h3>Our Mission</h3>
+            <p>The SBC's mission is clear: To establish itself as the foremost tactical unit in Roblox, specializing in innovative strategies, elite combat proficiency, and unmatched coordination. We strive to provide our members with a thriving environment for skill enhancement, leadership growth, and camaraderie. Our collective goal is to dominate every battlefield and continuously improve as a unit.</p>
+            <p>We are committed to evolving our tactics to meet the ever-changing landscape of Roblox warfare. Whether through open skirmishes, tournaments, or large-scale battles, we seek to conquer every challenge with precision and strategic foresight. The SBC remains focused on honing its abilities while forming lasting bonds of friendship and mutual respect among its members.</p>
+        </div>
+    </section>
+
+    <section id="structure">
+        <h2>Our Structure</h2>
+        <div class="subsection">
+            <h3>Leadership Hierarchy</h3>
+            <p>Our leadership hierarchy is meticulously designed to ensure smooth operations and absolute authority when required. At the pinnacle stands the Command Council, a small but powerful group of seasoned leaders responsible for overseeing all operations. The Council establishes protocols, directs major campaigns, and ensures the unity of the SBC. The members of the Command Council are chosen for their experience, tactical acumen, and leadership capabilities.</p>
+            <p>Below the Council, the ranks are divided into various divisions, each with a unique function and responsibility. These divisions are led by Division Commanders who report directly to the Command Council. The structure is built to ensure both flexibility in strategy and strength in leadership, allowing us to respond to any battlefield situation effectively.</p>
+        </div>
+        <div class="subsection">
+            <h3>Operational Divisions</h3>
+            <p>The SBC is divided into specialized divisions: Assault, Recon, Support, Strategy, and Technology. Each division is structured to excel in their specific roles, fostering both individual excellence and collaborative power. Members are carefully assigned to divisions based on their skill sets and personal preferences.</p>
+            <p>The Assault Division leads offensive operations, engaging in high-stakes assaults and aggressive strategies. The Recon Division focuses on gathering intelligence, scouting enemy movements, and providing key strategic insights. The Support Division ensures that resources are efficiently managed, aiding combat operations. The Strategy Division handles the long-term planning and tactical direction of the crew. Lastly, the Technology Division works to enhance the crew’s technological edge, creating tools and gadgets to aid in combat and information warfare.</p>
+        </div>
+    </section>
+
+    <section id="members">
+        <h2>Our Members</h2>
+        <div class="subsection">
+            <h3>Elite Warriors</h3>
+            <p>Our crew is composed of dedicated players, each handpicked for their skill, dedication, and potential. We train together, improve together, and dominate together. Each member is part of something greater than themselves—a family that works together to accomplish objectives, overcome obstacles, and rise above the competition.</p>
+            <p>Whether you are a seasoned veteran or a new recruit, every member plays a critical role in our success. The training is intense, the camaraderie unmatched, and the rewards immense. Our members share a passion for excellence and a commitment to the SBC’s core values: respect, teamwork, and determination.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="subsection">
+            <h3>Reach Out</h3>
+            <p>Whether you're interested in joining our ranks, seeking a strategic alliance, or just have a question, feel free to reach out to us. We are always looking for those who can enhance our crew's strength and bring new skills to the table.</p>
+            <p>You can contact us directly by using the form below, or reach out to our main representative, **nicoz0406**,(email:ionascunicolas59@gmail.com) for personalized inquiries. We are always open to collaboration and will respond as quickly as possible.</p>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
